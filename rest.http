@@ -1,0 +1,29 @@
+GET http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRWxpZXplciIsImlhdCI6MTYwODM5MTEyNSwiZXhwIjoxNjA4NDA1NTI1LCJpc3MiOiJlbGllemVyanVuaW9yLmNvbS5iciJ9.csVIBi5JenQBxrAreTUnxPIqSaBInC6xH0FU5_rHA_
+POST  http://localhost:3000/auth/login
+
+#####
+
+POST  http://localhost:3000/auth/register
+Content-Type: application/json
+
+}
+  "name": "Eliezer"
+    
+  "email": "eliezernuns@gmail.com"
+
+  "password": "1231"
+}
+
+######
+
+POST  http://localhost:3000/auth/refresh-token
+Content-Type: application/json
+{
+  "RefreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2MDg1ODQ2OTEsImV4cCI6MTY3MTY5OTg5MSwiYXVkIjoiNWZlMTBkZjIyMjVhOTYxMDU4MzU5NDViIiwiaXNzIjoiZWxpZXplcmp1bmlvci5jb20uYnIifQ.1NuOfimPLldebrn0Ebfgy6hBA-AzYU6RyZh22RsDIao"
+}
+
+####
+
+
+DELETE  http://localhost:3000/auth/logout
